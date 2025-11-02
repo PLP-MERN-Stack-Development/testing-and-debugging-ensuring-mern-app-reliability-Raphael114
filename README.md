@@ -1,8 +1,8 @@
 # Testing and Debugging MERN Applications
 
-This assignment focuses on implementing comprehensive testing strategies for a MERN stack application, including unit testing, integration testing, and end-to-end testing, along with debugging techniques.
+This project implements comprehensive testing strategies for a MERN stack application, including unit testing, integration testing, and end-to-end testing, along with debugging techniques. It demonstrates best practices for testing both frontend and backend components, with complete test coverage reporting.
 
-## Assignment Overview
+## Project Overview
 
 You will:
 1. Set up testing environments for both client and server
@@ -78,10 +78,53 @@ Your work will be automatically submitted when you push to your GitHub Classroom
 4. Include screenshots of your test coverage reports
 5. Demonstrate debugging techniques in your code
 
-## Resources
+## Available Scripts
 
-- [Jest Documentation](https://jestjs.io/docs/getting-started)
-- [React Testing Library Documentation](https://testing-library.com/docs/react-testing-library/intro/)
-- [Supertest Documentation](https://github.com/visionmedia/supertest)
-- [Cypress Documentation](https://docs.cypress.io/)
-- [MongoDB Testing Best Practices](https://www.mongodb.com/blog/post/mongodb-testing-best-practices) 
+The project includes several NPM scripts for testing:
+
+```bash
+# Install all dependencies (client and server)
+npm run install-all
+
+# Run all tests with coverage
+npm test
+
+# Run only client-side tests
+npm run test:client
+
+# Run only server-side tests
+npm run test:server
+
+# Run integration tests
+npm run test:integration
+
+# Run unit tests
+npm run test:unit
+```
+
+## Test Coverage
+
+The project maintains comprehensive test coverage across both client and server components. Coverage reports are generated in the `coverage` directory and can be viewed by opening `coverage/lcov-report/index.html` in a browser.
+
+Coverage includes:
+- Frontend React components
+- Backend API endpoints
+- Database models and operations
+- Authentication utilities
+- Integration test scenarios
+
+## Implementation Details
+
+### Client-Side Testing
+- React components testing using Jest and React Testing Library
+- Mock implementations for file imports and static assets
+- Component rendering and interaction tests
+- State management testing
+
+### Server-Side Testing
+- API endpoint integration tests
+- MongoDB model validation tests
+- Authentication middleware testing
+- Database operations testing with MongoDB Memory Server
+
+## Resources
