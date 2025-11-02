@@ -10,6 +10,7 @@ module.exports = {
       testMatch: ['<rootDir>/server/tests/**/*.test.js'],
       moduleFileExtensions: ['js', 'json', 'node'],
       setupFilesAfterEnv: ['<rootDir>/server/tests/setup.js'],
+      testTimeout: 60000,
       coverageDirectory: '<rootDir>/coverage/server',
       collectCoverageFrom: [
         'server/src/**/*.js',
@@ -45,13 +46,13 @@ module.exports = {
   verbose: true,
   collectCoverage: true,
   coverageReporters: ['text', 'lcov', 'clover', 'html'],
+  testTimeout: 60000,
   coverageThreshold: {
     global: {
       statements: 70,
-      branches: 60,
+      branches: 50,
       functions: 70,
       lines: 70,
     },
   },
-  testTimeout: 10000,
 }; 

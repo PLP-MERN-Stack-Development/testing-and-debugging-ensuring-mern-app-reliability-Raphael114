@@ -1,0 +1,25 @@
+{
+  "name": "plp-assignment6",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install-all": "npm install --prefix client; npm install --prefix server",
+    "test": "jest --coverage",
+    "test:client": "jest --selectProjects client",
+    "test:server": "jest --selectProjects server",
+    "test:integration": "jest --selectProjects server --testPathPattern integration",
+    "test:unit": "jest --runInBand",
+    "test:e2e": "echo \"Run e2e tests with Cypress or Playwright (configure client/e2e)\" && exit 0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-react": "^7.28.5",
+    "babel-jest": "^29.0.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.0.0"
+  },
+  "dependencies": {
+    "jest-environment-jsdom": "^30.2.0"
+  }
+}

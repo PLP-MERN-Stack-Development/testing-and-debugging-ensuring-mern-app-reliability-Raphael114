@@ -1,0 +1,21 @@
+{
+  "name": "plp-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "jest --passWithNoTests",
+    "setup-test-db": "node ./tests/setupTestDb.js || echo \"Please add a test DB setup script at server/tests/setupTestDb.js\""
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.3.1",
+    "npm": "^11.6.2"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "mongodb-memory-server": "^8.11.0",
+    "supertest": "^6.0.0"
+  }
+}
